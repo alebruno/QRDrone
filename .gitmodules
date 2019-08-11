@@ -1,0 +1,3 @@
+[submodule "QRDrone/lib/cvdrone"]
+	path = QRDrone/lib/cvdrone
+	url = https://github.com/puku0x/cvdrone.git
