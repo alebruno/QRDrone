@@ -5,7 +5,7 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 project (arDroneLibraryProject)
 find_package( OpenCV REQUIRED )
 
-set(PARH_TO_ARDRONE_SOURCES ./cvdrone/src/ardrone)
+set(PARH_TO_ARDRONE_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/cvdrone/src/ardrone)
 
 add_library(arDroneLibrary
     ${PARH_TO_ARDRONE_SOURCES}/ardrone.cpp
