@@ -1,5 +1,5 @@
 import time, sys, cv2, numpy
-import ps_drone
+import lib.psdrone.api.ps_drone as ps_drone
 
 # Startup sequence as suggested in the documentation of the psdrone library
 drone = ps_drone.Drone()

@@ -1,3 +1,6 @@
 [submodule "QRDrone/lib/cvdrone"]
 	path = QRDrone/lib/cvdrone
 	url = https://github.com/puku0x/cvdrone.git
+[submodule "ARDroneCameraCalibration/lib/psdrone"]
+	path = ARDroneCameraCalibration/lib/psdrone
+	url = https://github.com/reixd/ps-drone

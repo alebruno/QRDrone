@@ -8,7 +8,7 @@ A Jenkins server tests automatically that the application can be built and linke
 
 ![Demo of the Jenkins Server](./demo_Jenkins.png)
 
-After cloning the repo, run the following command to get a shallow clone of the submodule containing the cvdrone library:
+After cloning the repo, run the following command to get a shallow clone of the submodules containing the cvdrone and the psdrone libraries:
 
 git submodule update  --init --recursive --depth 1
 
