@@ -131,7 +131,7 @@ int main(int argc, char *argv[])
       undistort(image, undistorted, cameraMatrix, distCoeffs);
 
       // Decode barcodes and QR codes and print them to stdout
-      decode(image, decodedObjects)
+      decode(image, decodedObjects);
       decode(undistorted, decodedObjectsUndistorted);
 
       // Print distorted and undistorted picture with an overlay of the detected barcodes and QR codes
