@@ -1,10 +1,10 @@
 # Library CMakeLists.txt
 cmake_minimum_required (VERSION 3.0)
-set(CMAKE_VERBOSE_MAKEFILE ON)
 
 project (arDroneLibraryProject)
-find_package( OpenCV REQUIRED )
 
+set(CMAKE_VERBOSE_MAKEFILE ON)
+find_package( OpenCV REQUIRED )
 set(PARH_TO_ARDRONE_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/cvdrone/src/ardrone)
 
 add_library(arDroneLibrary
@@ -19,5 +19,3 @@ add_library(arDroneLibrary
 )
 
 target_link_libraries(arDroneLibrary ${OpenCV_LIBS} "-D__STDC_CONSTANT_MACROS -lm -lpthread -lavutil -lavformat -lavcodec -lswscale")
-
-
