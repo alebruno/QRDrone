@@ -88,7 +88,7 @@ void display(Mat &im, vector<decodedObject>&decodedObjects, string name)
 // Application QRDrone
 int main(int argc, char *argv[])
 {
-    std::cout << "QRDrone" << std::endl;
+    std::cout << "Running QRDrone" << std::endl;
     
     // Initialize the camera matrix and the vector of distorsion coefficients
     Mat distCoeffs = Mat::zeros(5, 1, CV_64F);
@@ -137,8 +137,7 @@ int main(int argc, char *argv[])
       // Print distorted and undistorted picture with an overlay of the detected barcodes and QR codes
       display(image, decodedObjects, "DetectedDistorted");
       display(undistorted, decodedObjectsUndistorted, "DetectedUndistorted");
-
-	    sleep(0.05);
+      sleep(0.05);
 
       // Press Esc to exit
       if (cv::waitKey(1) == 0x1b) break;
